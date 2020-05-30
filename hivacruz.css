@@ -27,7 +27,7 @@
 }
 
 :root {
-  --text-color: #fff;
+  --text-color: #ffffff;
   --bg-color: #152638;
   --side-bar-bg-color: #152638;
   --control-text-color: #a9aaab;
@@ -127,7 +127,7 @@ h5 {
 
 h6 {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 p {
@@ -320,7 +320,7 @@ table th, table td {
   padding: 8px;
   line-height: 1.25rem;
   vertical-align: top;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #324560;
 }
 
 table th {
@@ -336,12 +336,12 @@ table caption+thead tr:first-child th, table caption+thead tr:first-child td, ta
 }
 
 table tbody+tbody {
-  border-top: 2px solid #ddd;
+  border-top: 2px solid #324560;
 }
 
 table tr th {
-  border: 1px solid #57708d;
-  border-bottom: solid 2px #ccc;
+  border: 1px solid #324560;
+  border-bottom: solid 2px #324560;
   border-bottom: 0;
   font-weight: 700;
   margin: 0;
@@ -350,7 +350,7 @@ table tr th {
 
 table tr td {
   background: #192534;
-  border: 1px solid #57708d;
+  border: 1px solid #324560;
   margin: 0;
   padding: 10px 16px;
 }
@@ -369,18 +369,18 @@ table {
 }
 
 table tr {
-  border-top: 1px solid #57708d;
+  border-top: 1px solid #324560;
   margin: 0;
   padding: 0;
 }
 
 thead {
-  background-color: #324963;
-  color: #9dbbdd;
+  background-color: #192133;
+  color: #ff8e30;
 }
 
 table tr th {
-  border: 1px solid #57708d;
+  border: 1px solid #324560;
   border-bottom: solid 2px #ccc;
   border-bottom: 0;
   font-weight: 700;
@@ -390,7 +390,7 @@ table tr th {
 
 table tr td {
   background: #192534;
-  border: 1px solid #57708d;
+  border: 1px solid #324560;
   margin: 0;
   padding: 10px 16px;
 }
@@ -401,6 +401,14 @@ table tr th:first-child, table tr td:first-child {
 
 table tr th:last-child, table tr td:last-child {
   margin-bottom: 0;
+}
+
+table tr:nth-child(2n), table tr:nth-child(1n) td {
+  background-color: #152638;
+}
+
+table tr:nth-child(2n), table tr:nth-child(2n) td {
+  background-color: #192133;
 }
 
 .md-fences, tt {
@@ -447,7 +455,7 @@ code {
   border: 0;
   border-radius: 3px;
   color: #fff;
-  font-size: 85%;
+  font-size: 100%;
   line-height: 1.45;
   margin-top: 0!important;
   padding: 1rem;
@@ -531,15 +539,15 @@ code, .md-fences {
   height: 1rem;
   vertical-align: middle;
   text-align: center;
-  border: 1px solid gray;
-  background-color: #fdfdfd;
+  border: 1px solid #324560;
+  background-color: #192133!important;
   margin-left: 0;
   margin-top: -.5rem;
 }
 
 .task-list-item input:checked:before, .task-list-item input[checked]:before {
-  content: "\25FC";
-  font-size: .8125rem;
+  content: "\00D7";
+  font-size: 1.2125rem;
   line-height: .9375rem;
   margin-top: -1rem;
 }
@@ -549,6 +557,10 @@ code, .md-fences {
     margin-top: -.2rem;
   }
 }
+
+
+
+
 
 blockquote {
   margin: 0 0 1.11111rem;
@@ -561,7 +573,7 @@ blockquote, blockquote p {
   color: #b87f62;
 }
 
-#write pre.md-meta-block {
+/*#write pre.md-meta-block {
   min-height: 30px;
   background: #f8f8f8;
   padding: 1.5em;
@@ -577,7 +589,7 @@ blockquote, blockquote p {
   margin-right: -1000px;
   margin-bottom: 2em;
 }
-
+*/
 .MathJax_Display {
   font-size: .9em;
   margin-top: .5em;
@@ -825,10 +837,12 @@ input {
 
 #write ol>li, #write ul>li {
   color: #f0b752;
+  font-weight: bold;
 }
 
 #write ol>li>*, #write ul>li>* {
   color: #fff;
+  font-weight: normal;
 }
 
 #write ol>li>*:not(ol):not(ul), #write ul>li>*:not(ol):not(ul) {
@@ -846,3 +860,115 @@ ul:first-child, ol:first-child {
 ul:last-child, ol:last-child {
   margin-bottom: 0;
 }
+
+sup.md-footnote {
+  background-color: #ff8e30;
+  color: black;
+  font-weight: bold;
+}
+
+mark {
+  background-color: #ff8e30;
+  border-radius: 4px;
+  color: black;
+  line-height: 1;
+  padding: 5px 7px 2px 7px;
+}
+
+/* Source Mode */
+.cm-s-typora-default {
+    font-family: "Nunito" ,sans-serif;
+    font-size: 16px;
+    color: white;
+}
+/** markdown source **/
+.cm-s-typora-default .cm-header,
+.cm-s-typora-default .cm-property
+{
+    color: #afe61d;
+}
+
+.cm-s-typora-default .cm-header1 {
+  font-size: 3.2rem;
+  margin: .6rem 0;
+  width: auto;
+}
+
+.cm-s-typora-default .cm-header2 {
+  font-size: 1.8rem;
+  margin: .7rem 0;
+  width: auto;
+}
+
+.cm-s-typora-default .cm-header3 {
+  font-size: 1.4rem;
+  margin: .5rem 0;
+  width: auto;
+}
+
+.cm-s-typora-default .cm-header4 {
+  font-size: 1.2rem;
+  margin: .2rem 0;
+  width: auto;
+}
+
+.cm-s-typora-default .cm-header5, .cm-s-typora-default .cm-header6 {
+  font-size: 1rem;
+  margin: 0;
+  width: auto;
+}
+
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor{
+    border-left: 3px solid #b8bfc6;
+}
+
+.cm-s-typora-default .cm-comment {
+    color: #9FB1FF;
+}
+
+.cm-s-typora-default .cm-string {
+    color: #A7A7D9
+}
+
+.cm-s-typora-default .cm-atom, .cm-s-typora-default .cm-number {
+    color: #848695;
+    font-style: italic;
+}
+
+.cm-s-typora-default .cm-link, .cm-s-typora-default .cm-tag {
+    color: #27c3ca;
+}
+
+.cm-s-typora-default .cm-string {
+    color: #f0b752;
+}
+
+.cm-s-typora-default .cm-comment {
+  background-color: #6952b6;
+  border-radius: 4px;
+  color: #ffffff !important;
+  line-height: 1;
+  padding: 5px 7px 2px 7px;
+}
+
+
+.cm-s-typora-default pre.cm-s-inner {
+  background-color: #192133 !important;
+}
+
+.cm-s-typora-default .cm-atom {
+  color: #b87f62;
+}
+
+.cm-s-typora-default .CodeMirror-activeline-background {
+    background: rgba(51, 51, 51, 0.72);
+}
+
+.cm-s-typora-default .cm-comment, .cm-s-typora-default .cm-code {
+  color: #8aa1e1;
+}
+
+
+
+
+
