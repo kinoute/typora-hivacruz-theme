@@ -1,0 +1,1 @@
+# typora-hivacruz-theme
