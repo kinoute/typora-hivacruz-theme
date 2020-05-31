@@ -315,7 +315,13 @@ a, .md-def-url {
 }
 
 a:hover {
-  text-decoration: underline;
+  border-bottom: 3px solid #27c3ca;
+  color: #27c3ca;
+  text-decoration: none;
+}
+
+.md-toc-inner:hover {
+  text-decoration: none;
 }
 
 table {
@@ -660,6 +666,10 @@ header, .context-menu, .megamenu-content, footer {
   background-image: none;
 }
 
+.file-node-content .fa-caret-right, .file-node-content .fa-caret-down {
+  color: #f0b752;
+}
+
 #typora-sidebar #ty-sidebar-footer {
   background-color: #212431!important;
   border-top: 1px solid #090b10;
@@ -675,12 +685,27 @@ header, .context-menu, .megamenu-content, footer {
 
 .file-node-content:hover .file-node-icon, .file-node-content:hover .file-node-open-state {
   visibility: visible;
+  background: #212431!important;
 }
 
 .mac-seamless-mode #typora-sidebar {
   background-color: #212431;
   border-right: 0 solid #090c12;
   font-weight: 400;
+  font-family: "Nunito" ,sans-serif;
+}
+
+.sidebar-tab.active {
+  color: #afe61d;
+  font-weight: bold;
+}
+
+.file-node-icon, .file-node-open-state {
+  color: #27c3ca;
+}
+
+.fa-file-text-o:before {
+  color: #f0b752 !important;
 }
 
 .md-lang {
@@ -689,6 +714,8 @@ header, .context-menu, .megamenu-content, footer {
 
 .html-for-mac .context-menu {
   --item-hover-bg-color: #090c12;
+    color: #efb752;
+
 }
 
 hr {
