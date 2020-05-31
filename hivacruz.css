@@ -315,9 +315,8 @@ a, .md-def-url {
 }
 
 a:hover {
-  border-bottom: 3px solid #27c3ca;
   color: #27c3ca;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .md-toc-inner:hover {
@@ -670,9 +669,14 @@ header, .context-menu, .megamenu-content, footer {
   color: #f0b752;
 }
 
+
 #typora-sidebar #ty-sidebar-footer {
-  background-color: #212431!important;
-  border-top: 1px solid #090b10;
+  background-color: #212431 !important;
+  border-top: 0px solid #090b10;
+}
+
+.sidebar-tabs {
+  border-bottom: 0px;
 }
 
 .megamenu-menu-header {
@@ -685,7 +689,7 @@ header, .context-menu, .megamenu-content, footer {
 
 .file-node-content:hover .file-node-icon, .file-node-content:hover .file-node-open-state {
   visibility: visible;
-  background: #212431!important;
+  background: #212431 !important;
 }
 
 .mac-seamless-mode #typora-sidebar {
@@ -693,6 +697,14 @@ header, .context-menu, .megamenu-content, footer {
   border-right: 0 solid #090c12;
   font-weight: 400;
   font-family: "Nunito" ,sans-serif;
+}
+
+/*.mac-seamless-mode #typora-sidebar:hover {
+  background-color: inherit !important;
+}*/
+
+.sidebar-footer-item:hover {
+  background-color: inherit;
 }
 
 .sidebar-tab.active {
