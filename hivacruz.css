@@ -100,7 +100,7 @@ html {
 }
 
 h1 {
-  font-weight: 400;
+  font-weight: 700;
   line-height: 4rem;
   margin: 0 0 0;
   padding: 20px 0;
@@ -109,7 +109,7 @@ h1 {
 }
 
 h2 {
-  font-weight: 400;
+  font-weight: 700;
   line-height: 3rem;
   margin: 0 0 1rem;
   padding: 0 0;
@@ -118,17 +118,17 @@ h2 {
 }
 
 h3, h4 {
-  font-weight: 400;
+  font-weight: 700;
 }
 
 h5 {
   font-size: 1.125rem;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 h6 {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 p {
@@ -254,7 +254,7 @@ h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, 
 }
 
 #write h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin: .7rem 0;
 }
 
@@ -264,32 +264,32 @@ h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, 
 }
 
 #write h3 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin: .5rem 0;
 }
 
 #write h3:before {
-  bottom: .15rem;
+  bottom: 1.75rem;
   content: "H3";
 }
 
 #write h4 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin: .2rem 0;
 }
 
 #write h4:before {
   content: "H4";
-  bottom: .15rem;
+  bottom: 1.75rem;
 }
 
 #write h5, #write h6 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 0;
 }
 
 #write h5:before, #write h6:before {
-  bottom: .1rem;
+  bottom: 1.75rem;
 }
 
 #write h5:before {
@@ -299,6 +299,11 @@ h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, 
 #write h6:before {
   content: "H6";
 }
+
+h3.md-focus:before, h4.md-focus:before, h5.md-focus:before, h6.md-focus:before {
+  border: 0;
+}
+
 
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write pre {
   width: auto;
@@ -471,13 +476,13 @@ code {
 }
 
 #write>h3.md-focus:before {
-  left: -1.5625rem;
-  top: .375rem;
+  left: -2.5625rem;
+  top: 1.675rem;
 }
 
 #write>h4.md-focus:before, #write>h5.md-focus:before, #write>h6.md-focus:before {
-  left: -1.5625rem;
-  top: .285714286rem;
+  left: -2.5625rem;
+  top: 1.285714286rem;
 }
 
 .md-image>.md-meta {
@@ -516,7 +521,7 @@ code, .md-fences {
 
 .md-fences {
   margin: 0 0 20px;
-  font-size: 1em;
+  font-size: 1.145em;
   padding: .3em 1em;
   padding-top: .4em;
 }
@@ -566,7 +571,7 @@ code, .md-fences {
 blockquote {
   margin: 0 0 1.11111rem;
   padding: .5rem 1.11111rem 0 1.05556rem;
-  border-left: 2px solid gray;
+  border-left: 2px solid #b87f62;
 }
 
 blockquote, blockquote p {
@@ -766,6 +771,7 @@ input {
 
 .cm-s-inner span.cm-comment {
   color: #6272a4;
+  font-style: normal;
 }
 
 .cm-s-inner span.cm-string, .cm-s-inner span.cm-string-2 {
