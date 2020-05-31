@@ -648,7 +648,7 @@ p.mathjax-block, .mathjax-block {
 }
 
 header, .context-menu, .megamenu-content, footer {
-  font-family: Nunito,sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .megamenu-opened header {
@@ -968,8 +968,3 @@ mark {
 .cm-s-typora-default .cm-comment, .cm-s-typora-default .cm-code {
   color: #8aa1e1;
 }
-
-
-
-
-
