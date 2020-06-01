@@ -37,7 +37,7 @@
   --active-file-border-color: #f0b752;
   --active-file-bg-color: #152638;
   --primary-btn-text-color: #f0b752;
-  --window-border: 1px solid #16161a;
+  --window-border: 0px solid #152638;
   --item-hover-bg-color: #152638;
   --item-hover-text-color: #f0b752;
   --meta-content-color: #f0b752;
@@ -45,6 +45,7 @@
   --control-text-color: var(--text-color);
   --control-text-hover-color: var(--text-color);
   --heading-char-color: #f0b752;
+  --active-toggle-btn-color: #192133;
 }
 
 .dropdown-menu {
@@ -507,9 +508,10 @@ code {
 }
 
 .code-tooltip {
-  background: #192133;
+  background: #152638;
   border: 1px solid #324560;
   box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+  margin-right: 13px !important;
 }
 
 .dropdown-menu {
@@ -551,7 +553,7 @@ code, .md-fences {
   vertical-align: middle;
   text-align: center;
   border: 1px solid #324560;
-  background-color: #192133!important;
+  background-color: #192133 !important;
   margin-left: 0;
   margin-top: -.5rem;
 }
@@ -633,12 +635,40 @@ p.mathjax-block, .mathjax-block {
   color: #555;
 }
 
+
+
+.searchpanel-search-option-btn {
+  background-color: #192133 !important;
+  border: 1px solid #324560;
+}
+
+.searchpanel-search-option-btn.active {
+  color: #ddd;
+  border: 1px solid #ddd;
+}
+
+.searchpanel-search-option-btn:hover {
+  border: 1px solid #f0b752;
+;
+}
+
 #md-searchpanel {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 0px solid #324560;
+  font-family: "Nunito" ,sans-serif;
+}
+
+#md-searchpanel input {
+  background-color: #192133 !important;
+  border: 1px solid #324560;
 }
 
 #md-searchpanel .btn {
-  border: 1px solid #ccc;
+  border: 1px solid #324560;
+  font-size: 11px;
+}
+
+#md-searchpanel .btn:hover {
+  color: #f0b752;
 }
 
 #md-notification:before {
@@ -646,7 +676,18 @@ p.mathjax-block, .mathjax-block {
 }
 
 #md-notification {
-  background: #eee;
+  background: #192133;
+  font-size: 14px;
+  border-bottom: 0px;
+}
+
+#md-notification .ty-enter-mode-warning-header {
+  color: #f0b752;
+}
+
+
+#md-notification p, #md-notification .btn, #md-notification label {
+  font-size: 14px !important;
 }
 
 .megamenu-menu-panel .btn {
@@ -669,6 +710,9 @@ header, .context-menu, .megamenu-content, footer {
   color: #f0b752;
 }
 
+.active-tab-files {
+  background-color: #212431 !important;
+}
 
 #typora-sidebar #ty-sidebar-footer {
   background-color: #212431 !important;
@@ -699,6 +743,8 @@ header, .context-menu, .megamenu-content, footer {
   font-family: "Nunito" ,sans-serif;
 }
 
+
+
 /*.mac-seamless-mode #typora-sidebar:hover {
   background-color: inherit !important;
 }*/
@@ -725,7 +771,7 @@ header, .context-menu, .megamenu-content, footer {
 }
 
 .html-for-mac .context-menu {
-  --item-hover-bg-color: #090c12;
+  --item-hover-bg-color: #152638;
     color: #efb752;
 
 }
@@ -785,7 +831,7 @@ input {
 }
 
 .cm-s-inner.CodeMirror, .cm-s-inner .CodeMirror-gutters {
-  background-color: #192133!important;
+  background-color: #192133 !important;
   border: 1px solid #324560;
 }
 
@@ -907,6 +953,11 @@ ul:last-child, ol:last-child {
   margin-bottom: 0;
 }
 
+.typora-export li {
+  font-size: 14px !important;
+  text-align: justify !important;
+}
+
 sup.md-footnote {
   background-color: #ff8e30;
   color: black;
@@ -927,6 +978,7 @@ mark {
     font-size: 16px;
     color: white;
 }
+
 /** markdown source **/
 .cm-s-typora-default .cm-header,
 .cm-s-typora-default .cm-property
