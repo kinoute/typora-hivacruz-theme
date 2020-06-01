@@ -37,7 +37,7 @@
   --active-file-border-color: #f0b752;
   --active-file-bg-color: #152638;
   --primary-btn-text-color: #f0b752;
-  --window-border: 0px solid #152638;
+  --window-border: 0 solid #152638;
   --item-hover-bg-color: #152638;
   --item-hover-text-color: #f0b752;
   --meta-content-color: #f0b752;
@@ -46,6 +46,7 @@
   --control-text-hover-color: var(--text-color);
   --heading-char-color: #f0b752;
   --active-toggle-btn-color: #192133;
+  --blur-text-color: rgba(200, 200, 200, 0.33);
 }
 
 .dropdown-menu {
@@ -68,6 +69,12 @@ body {
   position: static;
   width: 90%;
 }
+
+
+.md-end-block.md-heading.md-focus {
+  color: #afe61d;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
   color: #afe61d;
@@ -137,6 +144,14 @@ p {
   font-size: 1rem;
   line-height: 1.25rem;
   margin: 0 0 1.25rem;
+}
+
+/* Focus Mode */
+
+.on-focus-mode {
+  h1.md-end-block:not(.md-focus):not(.md-focus-container) {
+      color: yellow !important;
+    }
 }
 
 #write>h3.md-focus:before {
@@ -304,7 +319,6 @@ h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, 
 h3.md-focus:before, h4.md-focus:before, h5.md-focus:before, h6.md-focus:before {
   border: 0;
 }
-
 
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write pre {
   width: auto;
@@ -502,16 +516,16 @@ code {
   color: #70bfd9;
   opacity: 1;
 }
-
+/*
 .CodeMirror-lines {
   padding: 4px 0;
 }
-
+*/
 .code-tooltip {
   background: #152638;
   border: 1px solid #324560;
   box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
-  margin-right: 13px !important;
+  margin-right: 13px!important;
 }
 
 .dropdown-menu {
@@ -553,7 +567,7 @@ code, .md-fences {
   vertical-align: middle;
   text-align: center;
   border: 1px solid #324560;
-  background-color: #192133 !important;
+  background-color: #192133!important;
   margin-left: 0;
   margin-top: -.5rem;
 }
@@ -571,10 +585,6 @@ code, .md-fences {
   }
 }
 
-
-
-
-
 blockquote {
   margin: 0 0 1.11111rem;
   padding: .5rem 1.11111rem 0 1.05556rem;
@@ -586,23 +596,6 @@ blockquote, blockquote p {
   color: #b87f62;
 }
 
-/*#write pre.md-meta-block {
-  min-height: 30px;
-  background: #f8f8f8;
-  padding: 1.5em;
-  font-weight: 300;
-  font-size: 1em;
-  padding-bottom: 1.5em;
-  padding-top: 3em;
-  margin-top: -1.5em;
-  color: #999;
-  border-left: 1000px #f8f8f8 solid;
-  margin-left: -1000px;
-  border-right: 1000px #f8f8f8 solid;
-  margin-right: -1000px;
-  margin-bottom: 2em;
-}
-*/
 .MathJax_Display {
   font-size: .9em;
   margin-top: .5em;
@@ -635,10 +628,8 @@ p.mathjax-block, .mathjax-block {
   color: #555;
 }
 
-
-
 .searchpanel-search-option-btn {
-  background-color: #192133 !important;
+  background-color: #192133!important;
   border: 1px solid #324560;
 }
 
@@ -649,16 +640,15 @@ p.mathjax-block, .mathjax-block {
 
 .searchpanel-search-option-btn:hover {
   border: 1px solid #f0b752;
-;
 }
 
 #md-searchpanel {
-  border-bottom: 0px solid #324560;
-  font-family: "Nunito" ,sans-serif;
+  border-bottom: 0 solid #324560;
+  font-family: Nunito,sans-serif;
 }
 
 #md-searchpanel input {
-  background-color: #192133 !important;
+  background-color: #192133!important;
   border: 1px solid #324560;
 }
 
@@ -678,16 +668,15 @@ p.mathjax-block, .mathjax-block {
 #md-notification {
   background: #192133;
   font-size: 14px;
-  border-bottom: 0px;
+  border-bottom: 0;
 }
 
 #md-notification .ty-enter-mode-warning-header {
   color: #f0b752;
 }
 
-
 #md-notification p, #md-notification .btn, #md-notification label {
-  font-size: 14px !important;
+  font-size: 14px!important;
 }
 
 .megamenu-menu-panel .btn {
@@ -699,7 +688,7 @@ p.mathjax-block, .mathjax-block {
 }
 
 header, .context-menu, .megamenu-content, footer {
-  font-family: "Nunito", sans-serif;
+  font-family: Nunito,sans-serif;
 }
 
 .megamenu-opened header {
@@ -711,16 +700,16 @@ header, .context-menu, .megamenu-content, footer {
 }
 
 .active-tab-files {
-  background-color: #212431 !important;
+  background-color: #212431!important;
 }
 
 #typora-sidebar #ty-sidebar-footer {
-  background-color: #212431 !important;
-  border-top: 0px solid #090b10;
+  background-color: #212431!important;
+  border-top: 0 solid #090b10;
 }
 
 .sidebar-tabs {
-  border-bottom: 0px;
+  border-bottom: 0;
 }
 
 .megamenu-menu-header {
@@ -733,21 +722,15 @@ header, .context-menu, .megamenu-content, footer {
 
 .file-node-content:hover .file-node-icon, .file-node-content:hover .file-node-open-state {
   visibility: visible;
-  background: #212431 !important;
+  background: #212431!important;
 }
 
 .mac-seamless-mode #typora-sidebar {
   background-color: #212431;
   border-right: 0 solid #090c12;
   font-weight: 400;
-  font-family: "Nunito" ,sans-serif;
+  font-family: Nunito,sans-serif;
 }
-
-
-
-/*.mac-seamless-mode #typora-sidebar:hover {
-  background-color: inherit !important;
-}*/
 
 .sidebar-footer-item:hover {
   background-color: inherit;
@@ -755,7 +738,7 @@ header, .context-menu, .megamenu-content, footer {
 
 .sidebar-tab.active {
   color: #afe61d;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .file-node-icon, .file-node-open-state {
@@ -763,7 +746,7 @@ header, .context-menu, .megamenu-content, footer {
 }
 
 .fa-file-text-o:before {
-  color: #f0b752 !important;
+  color: #f0b752!important;
 }
 
 .md-lang {
@@ -772,8 +755,7 @@ header, .context-menu, .megamenu-content, footer {
 
 .html-for-mac .context-menu {
   --item-hover-bg-color: #152638;
-    color: #efb752;
-
+  color: #efb752;
 }
 
 hr {
@@ -831,7 +813,7 @@ input {
 }
 
 .cm-s-inner.CodeMirror, .cm-s-inner .CodeMirror-gutters {
-  background-color: #192133 !important;
+  background-color: #192133!important;
   border: 1px solid #324560;
 }
 
@@ -912,7 +894,7 @@ input {
 }
 
 .cm-s-inner .CodeMirror-matchingbracket {
-  color: #fff!important;
+  color: #ffffff !important;
   text-decoration: underline;
 }
 
@@ -929,12 +911,12 @@ input {
 
 #write ol>li, #write ul>li {
   color: #f0b752;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 #write ol>li>*, #write ul>li>* {
   color: #fff;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 #write ol>li>*:not(ol):not(ul), #write ul>li>*:not(ol):not(ul) {
@@ -954,39 +936,35 @@ ul:last-child, ol:last-child {
 }
 
 .typora-export li {
-  font-size: 14px !important;
-  text-align: justify !important;
+  font-size: 14px!important;
+  text-align: justify!important;
 }
 
 sup.md-footnote {
   background-color: #ff8e30;
-  color: black;
-  font-weight: bold;
+  color: #000;
+  font-weight: 700;
 }
 
 mark {
   background-color: #ff8e30;
   border-radius: 4px;
-  color: black;
+  color: #000;
   line-height: 1;
   padding: 5px 7px 2px 7px;
 }
 
-/* Source Mode */
 .cm-s-typora-default {
-    font-family: "Nunito" ,sans-serif;
-    font-size: 16px;
-    color: white;
+  font-family: Nunito,sans-serif;
+  font-size: 16px;
+  color: #fff;
 }
 
-/** markdown source **/
-.cm-s-typora-default .cm-header,
-.cm-s-typora-default .cm-property
-{
-    color: #afe61d;
+.cm-s-typora-default .cm-header, .cm-s-typora-default .cm-property {
+  color: #afe61d;
 }
 
-.cm-s-typora-default .cm-header1 {
+/*.cm-s-typora-default .cm-header1 {
   font-size: 3.2rem;
   margin: .6rem 0;
   width: auto;
@@ -1014,44 +992,43 @@ mark {
   font-size: 1rem;
   margin: 0;
   width: auto;
-}
+}*/
 
-.CodeMirror.cm-s-typora-default div.CodeMirror-cursor{
-    border-left: 3px solid #b8bfc6;
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
+  border-left: 3px solid #b8bfc6;
 }
 
 .cm-s-typora-default .cm-comment {
-    color: #9FB1FF;
+  color: #9fb1ff;
 }
 
 .cm-s-typora-default .cm-string {
-    color: #A7A7D9
+  color: #a7a7d9;
 }
 
 .cm-s-typora-default .cm-atom, .cm-s-typora-default .cm-number {
-    color: #848695;
-    font-style: italic;
+  color: #848695;
+  font-style: italic;
 }
 
 .cm-s-typora-default .cm-link, .cm-s-typora-default .cm-tag {
-    color: #27c3ca;
+  color: #27c3ca;
 }
 
 .cm-s-typora-default .cm-string {
-    color: #f0b752;
+  color: #f0b752;
 }
 
 .cm-s-typora-default .cm-comment {
   background-color: #6952b6;
   border-radius: 4px;
-  color: #ffffff !important;
+  color: #fff!important;
   line-height: 1;
   padding: 5px 7px 2px 7px;
 }
 
-
 .cm-s-typora-default pre.cm-s-inner {
-  background-color: #192133 !important;
+  background-color: #192133!important;
 }
 
 .cm-s-typora-default .cm-atom {
@@ -1059,9 +1036,11 @@ mark {
 }
 
 .cm-s-typora-default .CodeMirror-activeline-background {
-    background: rgba(51, 51, 51, 0.72);
+  background: #FC4349;
 }
 
 .cm-s-typora-default .cm-comment, .cm-s-typora-default .cm-code {
   color: #8aa1e1;
 }
+
+
