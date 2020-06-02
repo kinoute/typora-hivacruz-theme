@@ -47,4 +47,4 @@ The theme is usable on macOS right now with most of the features implemented but
 * Created by [Yann Defretin](https://github.com/kinoute).
 * Forked from the original [Cobalt](https://github.com/elitistsnob/typora-cobalt-theme) theme by [Kent Pribbernow](https://www.github.com/elitistsnob).
 * Itself inspired by the [Cobalt](https://github.com/wesbos/cobalt2) Sublime Text Theme by [Wes Bos](https://github.com/wesbos).
-* The Font used is [Nunito](https://fonts.google.com/specimen/Nunito) by Designed by Vernon Adams.
+* The Font used is [Nunito](https://fonts.google.com/specimen/Nunito) designed by Vernon Adams.
