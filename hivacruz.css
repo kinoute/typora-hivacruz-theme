@@ -1,3 +1,13 @@
+/*
+Theme Name: Hivacruz
+Theme URI: https://github.com/kinoute/typora-hivacruz-theme
+Authors: Yann Defretin, Kent Pribbernow
+Author URI: https://github.com/kinoute
+Description: A Typora Dark blue theme forked from the "Cobalt" theme.
+Version: 0.1
+Tags: dark, blue, typora
+*/
+
 @font-face {
   font-family: Nunito;
   font-style: normal;
@@ -618,6 +628,8 @@ p.mathjax-block, .mathjax-block {
 
 .md-image>img {
   margin-top: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .md-image>.md-meta:first-of-type:before {
@@ -941,9 +953,24 @@ ul:last-child, ol:last-child {
 }
 
 sup.md-footnote {
-  background-color: #ff8e30;
-  color: #000;
+  background-color: #FC4349;
+  color: white;
   font-weight: 700;
+}
+
+.md-def-footnote .md-def-name:before, .md-def-footnote .md-def-name:after {
+  content: '';
+}
+
+.md-def-footnote .md-def-name {
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background-color: #FC4349;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+
 }
 
 mark {
