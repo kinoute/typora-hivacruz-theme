@@ -544,11 +544,12 @@ code {
 }
 
 code, .md-fences {
-  padding: .5em;
+  /*padding: .5em;*/
   font-size: .9em;
   margin-left: .2em;
   margin-right: .2em;
 }
+
 
 .md-fences {
   margin: 0 0 20px;
@@ -925,6 +926,13 @@ input {
   color: #f0b752;
   font-weight: 700;
 }
+
+#write ul>li ul>li {
+  list-style-type: circle;
+  background-color: transparent;
+  font-weight: 700;
+}
+
 
 #write ol>li>*, #write ul>li>* {
   color: #fff;
