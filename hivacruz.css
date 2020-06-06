@@ -1085,13 +1085,13 @@ mark {
   color: #f0b752;
 }
 
-.cm-s-typora-default .cm-comment {
+/*.cm-s-typora-default .cm-comment {
   background-color: #6952b6;
   border-radius: 4px;
   color: #fff!important;
   line-height: 1;
   padding: 5px 7px 2px 7px;
-}
+}*/
 
 .cm-s-typora-default pre.cm-s-inner {
   background-color: #192133!important;
@@ -1100,6 +1100,11 @@ mark {
 .cm-s-typora-default .cm-atom {
   color: #b87f62;
 }
+
+.CodeMirror-activeline .cm-atom {
+  color: white!important;
+}
+
 
 .cm-s-typora-default .CodeMirror-activeline-background {
   background: #FC4349;
