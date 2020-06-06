@@ -595,6 +595,15 @@ code, .md-fences {
   }
 }
 
+blockquote .md-end-block.md-heading {
+  color: inherit;
+}
+
+blockquote .md-end-block.md-heading:before {
+  content: '' !important;
+}
+
+
 blockquote {
   margin: 0 0 1.11111rem;
   padding: .5rem 1.11111rem 0 1.05556rem;
@@ -638,6 +647,15 @@ p.mathjax-block, .mathjax-block {
 
 #typora-source {
   color: #555;
+}
+
+.md-image-pick-file-btn, .md-image-input-src-btn {
+  background-color: #212431;
+}
+
+.md-image-btn.selected, .md-image-btn:hover, .md-image-pick-file-btn:hover, .md-image-input-src-btn:hover {
+  color: #f0b752 !important;
+  background-color: #212431 !important;
 }
 
 .searchpanel-search-option-btn {
