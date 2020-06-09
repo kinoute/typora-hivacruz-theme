@@ -457,7 +457,7 @@ code {
   background-color: #6952b6;
   border-radius: 4px;
   color: #fff;
-  line-height: 1;
+  line-height: 2;
   padding: 5px 7px 2px 7px;
 }
 
@@ -583,7 +583,7 @@ code, .md-fences {
 }
 
 .task-list-item input:checked:before, .task-list-item input[checked]:before {
-  content: "\00D7";
+  content: "\2713";
   font-size: 1.2125rem;
   line-height: .9375rem;
   margin-top: -1rem;
@@ -1114,4 +1114,69 @@ mark {
   color: #8aa1e1;
 }
 
+.CodeMirror-activeline .CodeMirror-gutter-elt {
+  color: white !important;
+}
+
+/* mega menu */
+.megamenu-content,
+.megamenu-opened header {
+    background: var(--bg-color1);
+}
+
+.megamenu-content {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.megamenu-menu-list {
+  background-color: #212431 !important;
+}
+
+.megamenu-opened .megamenu-content {
+    visibility: visible;
+    opacity: 1;
+    animation: none;
+}
+
+/* mega menu sidebar*/
+.megamenu-menu {
+    background-color: #212431;
+}
+
+/* return button in mega menu */
+#megamenu-menu-sidebar .menu-style-btn {
+    border: 0px;
+}
+
+/* remove divider in mega menu */
+.megamenu-menu-header {
+}
+
+/* return button color in mega menu */
+.megamenu-menu-header #megamenu-menu-header-title, .megamenu-menu-header #megamenu-menu-header-title:before {
+    color: #afe61d;
+}
+
+.megamenu-menu-list li a:hover, .megamenu-menu-list li a.active {
+  background-color: #152638;
+}
+
+/* return button hover in mega menu */
+.megamenu-menu-header:hover {
+}
+
+/* return button hover in mega menu */
+.megamenu-menu-header:hover #megamenu-menu-header-title {
+}
+
+/* long button in mega menu */
+.long-btn {
+    border: 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
 
