@@ -61,6 +61,12 @@ Tags: dark, blue, typora
   --select-text-bg-color: #192133;
 }
 
+
+.pane-group {
+  background-color: var(--bg-color);
+}
+
+
 .dropdown-menu {
   background-color: #1a283d!important;
   border-color: #313d50!important;
