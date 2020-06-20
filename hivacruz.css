@@ -57,6 +57,8 @@ Tags: dark, blue, typora
   --heading-char-color: #f0b752;
   --active-toggle-btn-color: #192133;
   --blur-text-color: rgba(200, 200, 200, 0.33);
+  --rawblock-edit-panel-bd: #192133 !important;
+  --select-text-bg-color: #192133;
 }
 
 .dropdown-menu {
@@ -616,9 +618,78 @@ blockquote, blockquote p {
 }
 
 .MathJax_Display {
-  font-size: .9em;
+  font-size: 1em !important;
   margin-top: .5em;
   margin-bottom: 0;
+}
+
+.md-math-block .MathJax_SVG_Display {
+  font-size: 1.4rem;
+}
+
+
+/* Edit Math Blocks */
+.md-rawblock-control:not(.md-rawblock-tooltip) {
+  font-size: 1.2rem;
+}
+
+.md-rawblock-control .CodeMirror.cm-s-inner {
+  border: 0px;
+}
+
+/* Inline Math Editing */
+.md-inline-math script {
+  color: #f0b752;
+}
+
+.md-math-tex inline-math-svg {
+  font-size: 1.4rem;
+}
+
+.md-rawblock-panel .code-tooltip {
+  border: 0px;
+}
+
+.md-rawblock-input {
+  font-size: 1.2rem;
+}
+
+/* mathjax edit panel*/
+.md-rawblock-before {
+    border-top-left-radius: 6px;
+}
+
+.md-rawblock-after {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+/* Inline Math */
+.MathJax_SVG {
+  font-size: 1.4rem;
+}
+
+.MathJax_SVG:focus {
+    outline: none;
+    background-color: transparent;
+}
+
+.md-rawblock>.md-rawblock-container {
+    transition: 0.5s;
+}
+
+.md-rawblock>.md-rawblock-tooltip {
+    transition: 0.5s;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.md-rawblock:hover>.md-rawblock-tooltip {
+    transition: 0.5s;
+    visibility: visible;
+    opacity: 1;
+    animation: none;
 }
 
 p.mathjax-block, .mathjax-block {
@@ -842,6 +913,14 @@ input {
   padding: .5rem .2rem;
 }
 
+.cm-s-inner .cm-link, .cm-s-inner.cm-link {
+  color: #27c3ca;
+}
+
+.cm-s-inner .cm-header {
+  color: #afe61d;
+}
+
 .cm-s-inner.CodeMirror, .cm-s-inner .CodeMirror-gutters {
   background-color: #192133!important;
   border: 1px solid #324560;
@@ -936,7 +1015,7 @@ input {
 
 #write ol, #write ul {
   padding-left: 2rem;
-  margin: .5rem 0;
+/*  margin: .5rem 0;*/
 }
 
 #write ol>li, #write ul>li {
