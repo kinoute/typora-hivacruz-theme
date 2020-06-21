@@ -59,6 +59,10 @@ Tags: dark, blue, typora
   --blur-text-color: rgba(200, 200, 200, 0.33);
   --rawblock-edit-panel-bd: #192133 !important;
 /*  --select-text-bg-color: #192133;*/
+  /* Mermaid diagrams*/
+  --mermaid-node-color: #b87f62 !important; 
+  --mermaid-node-border: #bd7958;
+  --mermaid-contrast-color: #afe61d;
 }
 
 .pane-group {
@@ -1313,3 +1317,71 @@ mark {
     margin-left: 10px;
 }
 
+/* Mermaid Diagrams */
+
+.titleText, .pieTitleText {
+  fill: var(--mermaid-contrast-color);
+  font-size: 2rem;
+  font-family: Nunito,sans-serif;
+  font-weight: 400;
+}
+
+
+/* Node Overview */
+
+/* Node text */ 
+.grid .tick text, .taskText, text.actor, .node .label,
+.taskTextOutsideRight, .taskTextOutsideLeft, .labelText , .loopText {
+  color: var(--text-color);
+  fill: var(--text-color);
+  stroke: black;
+  stroke-width: .05px;
+}
+
+/* Node color */
+.actor, .task, .node rect, 
+.node circle, .node ellipse, .node polygon {
+  fill: var(--mermaid-node-color);
+  stroke: var(--mermaid-node-border);
+  color: var(--text-color);
+}
+
+/* Node Labels (Notes & On path) */
+.edgeLabel foreignObject {
+  color: black;
+  background-color: var(--primary-color);
+  stroke: var(--primary-btn-border-color);
+  stroke-width: 1px;
+  height: 20px;
+  text-align: center;
+  padding-top: 2px;
+}
+
+.note {
+  fill: var(--primary-color);
+  stroke: var(--primary-btn-border-color); 
+}
+
+.noteText {
+  color: var(--text-color);
+}
+
+/* Gantt Specific */
+svg[id^="mermaidChart"] .today {
+  stroke: var(--mermaid-contrast-color);
+}
+
+/* Pie Chart Specific */
+
+svg[id^="mermaidChart"] g path {
+  stroke: var(--text-color);
+}
+
+text.slice {
+  fill: var(--text-color);
+}
+
+.legend text {
+  fill: var(--text-color);
+}
+/* End mermaid */
