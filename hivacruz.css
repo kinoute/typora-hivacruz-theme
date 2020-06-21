@@ -1337,16 +1337,20 @@ mark {
 
 /* Node text */ 
 .grid .tick text, .taskText, text.actor, .node .label,
-.taskTextOutsideRight, .taskTextOutsideLeft, .labelText , .loopText {
+.taskTextOutsideRight, .taskTextOutsideLeft, .labelText , .loopText, g.classGroup text {
   color: var(--text-color);
   fill: var(--text-color);
   stroke: black;
   stroke-width: .05px;
+
+  .title{ 
+    font-weight: 600;
+  }
 }
 
 /* Node color */
 .actor, .task, .node rect, 
-.node circle, .node ellipse, .node polygon {
+.node circle, .node ellipse, .node polygon, g.classGroup rect {
   fill: var(--mermaid-node-color);
   stroke: var(--mermaid-node-border);
   color: var(--text-color);
@@ -1372,6 +1376,33 @@ mark {
   color: var(--text-color);
 }
 
+/* Class diagram specific */
+g.classGroup line{
+  stroke: var(--text-color);
+}
+
+.classLabel .box  {
+  stroke: none;
+  stroke-width: 0;
+  fill: var(--primary-color);
+  opacity: 1;
+}
+
+svg[id^="mermaidChart"] .composition, svg[id^="mermaidChart"] .aggregation,
+svg[id^="mermaidChart"] .dependency, svg[id^="mermaidChart"] .relation {
+  stroke: var(--text-color);
+}
+
+.classLabel .label {
+  fill: black;
+}
+
+#extensionStart, #extensionEnd, #compositionStart, #compositionEnd, 
+#aggregationStart, #aggregationEnd, #dependencyStart, #dependencyEnd {
+  fill: var(--text-color);
+  stroke: var(--text-color);
+}
+
 /* Gantt Specific */
 svg[id^="mermaidChart"] .today {
   stroke: var(--mermaid-contrast-color);
@@ -1391,3 +1422,4 @@ text.slice {
   fill: var(--text-color);
 }
 /* End mermaid */
+
