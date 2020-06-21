@@ -1001,11 +1001,11 @@ input {
 }
 
 .cm-s-inner span.cm-variable-2 {
-  color: #50fa7b;
+  color: #ffffff;
 }
 
 .cm-s-inner span.cm-def {
-  color: #27c3ca;
+  color: #ffffff;
 }
 
 .cm-s-inner span.cm-operator {
@@ -1025,10 +1025,14 @@ input {
 }
 
 .cm-s-inner span.cm-tag {
-  color: #ff79c6;
+  color: #00A1F0;
 }
 
-.cm-s-inner span.cm-attribute, .cm-s-inner span.cm-qualifier {
+.cm-s-inner span.cm-attribute {
+  color: #FF712E
+}
+
+.cm-s-inner span.cm-qualifier {
   color: #50fa7b;
 }
 
@@ -1040,7 +1044,11 @@ input {
   color: #27c3ca;
 }
 
-.cm-s-inner span.cm-variable-3, .cm-s-inner span.cm-type {
+.cm-s-inner span.cm-variable-3 {
+  color: inherit;
+}
+
+.cm-s-inner span.cm-type {
   color: #ffb86c;
 }
 
