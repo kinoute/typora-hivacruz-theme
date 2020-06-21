@@ -341,7 +341,7 @@ h3.md-focus:before, h4.md-focus:before, h5.md-focus:before, h6.md-focus:before {
   border: 0;
 }
 
-#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write pre {
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write pre, #write p {
   width: auto;
 }
 
@@ -356,6 +356,12 @@ a:hover {
 }
 
 /* Summary */
+
+.md-toc {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .md-toc-content {
   background-color: #192133!important;
   border: 1px solid #324560;
@@ -590,7 +596,7 @@ code, .md-fences {
 .md-fences {
   margin: 0 0 20px;
   font-size: 1.145em;
-  padding: .3em 1em;
+  padding: 0;
   padding-top: .4em;
 }
 
