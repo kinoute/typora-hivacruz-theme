@@ -61,12 +61,9 @@ Tags: dark, blue, typora
 /*  --select-text-bg-color: #192133;*/
 }
 
-
 .pane-group {
   background-color: var(--bg-color);
 }
-
-
 
 .dropdown-menu {
   background-color: #1a283d!important;
@@ -89,11 +86,9 @@ body {
   width: 90%;
 }
 
-
 .md-end-block.md-heading.md-focus {
   color: #afe61d;
 }
-
 
 h1, h2, h3, h4, h5, h6 {
   color: #afe61d;
@@ -197,35 +192,42 @@ p {
   padding: 2px;
 }
 
-  .h1, h1 {
-    font-size: 3.25rem;
-  }
-  .h2, h2 {
-    font-size: 2.298rem;
-  }
-  .h3, h3 {
-    font-size: 1.625rem;
-  }
-  .h4, h4 {
-    font-size: 1.25rem;
-  }
-  .h5, h5 {
-    font-size: 1.15rem;
-  }
-  .h6, h6 {
-    font-size: 1rem;
-  }
-  #write>h4.md-focus:before, #write>h5.md-focus:before, #write>h6.md-focus:before {
-    top: 1px;
-  }
-  p {
-    font-size: 1.25rem;
-    line-height: 1.8;
-  }
-  table {
-    font-size: 1.25rem;
-  }
+.h1, h1 {
+  font-size: 3.25rem;
+}
 
+.h2, h2 {
+  font-size: 2.298rem;
+}
+
+.h3, h3 {
+  font-size: 1.625rem;
+}
+
+.h4, h4 {
+  font-size: 1.25rem;
+}
+
+.h5, h5 {
+  font-size: 1.15rem;
+}
+
+.h6, h6 {
+  font-size: 1rem;
+}
+
+#write>h4.md-focus:before, #write>h5.md-focus:before, #write>h6.md-focus:before {
+  top: 1px;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
+
+table {
+  font-size: 1.25rem;
+}
 
 /*@media screen and (max-width:48em) {
   blockquote {
@@ -253,6 +255,7 @@ p {
   }
 }
 */
+
 h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
   text-decoration: none;
 }
@@ -558,11 +561,13 @@ code {
   color: #70bfd9;
   opacity: 1;
 }
+
 /*
 .CodeMirror-lines {
   padding: 4px 0;
 }
 */
+
 .code-tooltip {
   background: #152638;
   border: 1px solid #324560;
@@ -581,7 +586,6 @@ code, .md-fences {
   margin-left: .2em;
   margin-right: .2em;
 }
-
 
 .md-fences {
   margin: 0 0 20px;
@@ -635,7 +639,6 @@ blockquote .md-end-block.md-heading {
 blockquote .md-end-block.md-heading:before {
   content: '' !important;
 }
-
 
 blockquote {
   margin: 0 0 1.11111rem;
