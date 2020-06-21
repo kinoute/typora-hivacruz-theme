@@ -4,7 +4,7 @@ Theme URI: https://github.com/kinoute/typora-hivacruz-theme
 Authors: Yann Defretin, Kent Pribbernow
 Author URI: https://github.com/kinoute
 Description: A Typora Dark blue theme forked from the "Cobalt" theme.
-Version: 0.2
+Version: 0.4
 Tags: dark, blue, typora
 */
 
@@ -58,8 +58,15 @@ Tags: dark, blue, typora
   --active-toggle-btn-color: #192133;
   --blur-text-color: rgba(200, 200, 200, 0.33);
   --rawblock-edit-panel-bd: #192133 !important;
-  --select-text-bg-color: #192133;
+/*  --select-text-bg-color: #192133;*/
 }
+
+
+.pane-group {
+  background-color: var(--bg-color);
+}
+
+
 
 .dropdown-menu {
   background-color: #1a283d!important;
@@ -73,7 +80,7 @@ body {
 
 #write {
   background: #152638;
-  font-family: Nunito,sans-serif;
+  font-family: "Nunito",sans-serif;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px;
@@ -90,7 +97,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #afe61d;
-  font-family: Nunito,sans-serif;
+  font-family: "Nunito",sans-serif;
   font-weight: 400;
   padding: 20px 0;
 }
@@ -345,8 +352,32 @@ a:hover {
   text-decoration: underline;
 }
 
-.md-toc-inner:hover {
+/* Summary */
+.md-toc-content {
+  background-color: #192133!important;
+  border: 1px solid #324560;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*.md-toc-inner:hover {
   text-decoration: none;
+}*/
+
+#write div.md-toc-tooltip {
+  background-color: #192133!important;
+  border: 1px solid #324560;
+  padding-left: 5px;
+  font-size: 1.4rem;
+  color: #ff8e30;
+}
+
+.md-toc:focus .md-toc-content {
+  border: 1px solid #324560;
+}
+
+.md-delete-toc {
+  color: white;
 }
 
 table {
@@ -720,6 +751,10 @@ p.mathjax-block, .mathjax-block {
   color: #555;
 }
 
+.typora-sourceview-on #toggle-sourceview-btn {
+  color: #555;
+}
+
 .md-image-pick-file-btn, .md-image-input-src-btn {
   background-color: #212431;
 }
@@ -745,7 +780,7 @@ p.mathjax-block, .mathjax-block {
 
 #md-searchpanel {
   border-bottom: 0 solid #324560;
-  font-family: Nunito,sans-serif;
+  font-family: "Nunito",sans-serif;
 }
 
 #md-searchpanel input {
@@ -789,7 +824,7 @@ p.mathjax-block, .mathjax-block {
 }
 
 header, .context-menu, .megamenu-content, footer {
-  font-family: Nunito,sans-serif;
+  font-family: "Nunito",sans-serif;
 }
 
 .megamenu-opened header {
@@ -946,28 +981,36 @@ input {
 }
 
 .cm-s-inner span.cm-comment {
-  color: #6272a4;
+  color: #b87f62;
   font-style: normal;
 }
 
 .cm-s-inner span.cm-string, .cm-s-inner span.cm-string-2 {
-  color: #f1fa8c;
+  color: #afe61d;
 }
 
 .cm-s-inner span.cm-number {
-  color: #bd93f9;
+  color: #00acf6;
 }
 
-.cm-s-inner span.cm-variable, .cm-s-inner span.cm-variable-2 {
+.cm-s-inner span.cm-variable {
+  color: #ffffff;
+}
+
+.cm-s-inner span.cm-variable-2 {
   color: #50fa7b;
 }
 
 .cm-s-inner span.cm-def {
-  color: #fff;
+  color: #27c3ca;
 }
 
-.cm-s-inner span.cm-operator, .cm-s-inner span.cm-keyword {
-  color: #ff79c6;
+.cm-s-inner span.cm-operator {
+  color: #ff8e30;
+}
+
+.cm-s-inner span.cm-keyword {
+  color: #ff8e30;
 }
 
 .cm-s-inner span.cm-atom {
@@ -991,7 +1034,7 @@ input {
 }
 
 .cm-s-inner span.cm-builtin {
-  color: #50fa7b;
+  color: #27c3ca;
 }
 
 .cm-s-inner span.cm-variable-3, .cm-s-inner span.cm-type {
@@ -1100,7 +1143,7 @@ mark {
 }
 
 .cm-s-typora-default {
-  font-family: Nunito,sans-serif;
+  font-family: "Nunito",sans-serif;
   font-size: 16px;
   color: #fff;
 }
