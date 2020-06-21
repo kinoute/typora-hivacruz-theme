@@ -8,6 +8,7 @@ Version: 0.2
 Tags: dark, blue, typora
 */
 
+
 @font-face {
   font-family: Nunito;
   font-style: normal;
@@ -61,11 +62,9 @@ Tags: dark, blue, typora
   --select-text-bg-color: #192133;
 }
 
-
 .pane-group {
   background-color: var(--bg-color);
 }
-
 
 .dropdown-menu {
   background-color: #1a283d!important;
@@ -723,6 +722,10 @@ p.mathjax-block, .mathjax-block {
 }
 
 #typora-source {
+  color: #555;
+}
+
+.typora-sourceview-on #toggle-sourceview-btn {
   color: #555;
 }
 
