@@ -60,7 +60,7 @@ Tags: dark, blue, typora
   --rawblock-edit-panel-bd: #192133 !important;
 /*  --select-text-bg-color: #192133;*/
   /* Mermaid diagrams*/
-  --mermaid-node-color: #b87f62 !important; 
+  --mermaid-node-color: #b87f62 !important;
   --mermaid-node-border: #bd7958;
   --mermaid-contrast-color: #afe61d;
 }
@@ -1055,7 +1055,7 @@ input {
 }
 
 .cm-s-inner span.cm-variable-3 {
-  color: inherit;
+  color: #b9bcba;
 }
 
 .cm-s-inner span.cm-type {
@@ -1335,7 +1335,7 @@ mark {
 
 /* Node Overview */
 
-/* Node text */ 
+/* Node text */
 .grid .tick text, .taskText, text.actor, .node .label,
 .taskTextOutsideRight, .taskTextOutsideLeft, .labelText , .loopText, g.classGroup text {
   color: var(--text-color);
@@ -1343,13 +1343,13 @@ mark {
   stroke: black;
   stroke-width: .05px;
 
-  .title{ 
+  .title{
     font-weight: 600;
   }
 }
 
 /* Node color */
-.actor, .task, .node rect, 
+.actor, .task, .node rect,
 .node circle, .node ellipse, .node polygon, g.classGroup rect {
   fill: var(--mermaid-node-color);
   stroke: var(--mermaid-node-border);
@@ -1369,7 +1369,7 @@ mark {
 
 .note {
   fill: var(--primary-color);
-  stroke: var(--primary-btn-border-color); 
+  stroke: var(--primary-btn-border-color);
 }
 
 .noteText {
@@ -1397,7 +1397,7 @@ svg[id^="mermaidChart"] .dependency, svg[id^="mermaidChart"] .relation {
   fill: black;
 }
 
-#extensionStart, #extensionEnd, #compositionStart, #compositionEnd, 
+#extensionStart, #extensionEnd, #compositionStart, #compositionEnd,
 #aggregationStart, #aggregationEnd, #dependencyStart, #dependencyEnd {
   fill: var(--text-color);
   stroke: var(--text-color);
