@@ -2,7 +2,7 @@
 
 # Hivacruz Theme for Typora
 
-This is a *Work in Progress* to create a [Typora](https://typora.io) theme that matches my [iTerm2 color scheme](https://github.com/kinoute/hivacruz-itermcolors) as well as my [Sublime Text 3 theme](https://github.com/kinoute/hivacruz-sublime-theme). Heavily inspired by the [Cobalt](https://github.com/elitistsnob/typora-cobalt-theme) theme.
+A dark theme for [Typora](https://typora.io), a multi-platform Markdown Editor, that matches my [iTerm2 color scheme](https://github.com/kinoute/hivacruz-itermcolors) as well as my [Sublime Text 3 theme](https://github.com/kinoute/hivacruz-sublime-theme). Heavily inspired by the [Cobalt](https://github.com/elitistsnob/typora-cobalt-theme) theme.
 
 ![](images/standard.png)
 
@@ -16,9 +16,7 @@ This is a *Work in Progress* to create a [Typora](https://typora.io) theme that 
 
 ## Status
 
-For now, as it's a *WIP*, it has only been tested on macOS Mojave 10.14.6 and some features are still missing.
-
-The theme is usable on macOS right now with most of the features implemented but on Windows/Linux, the preferences panel might look weird and the rendering might look different.
+The theme is usable on all three platforms. Since I have only macOS at my disposal right now to test, the theme might look weird on Windows/Linux and still need improvements.
 
 For that matter, Issues and Pull Requests are very welcome!
 
