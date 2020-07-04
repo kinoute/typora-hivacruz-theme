@@ -4,7 +4,7 @@ Theme URI: https://github.com/kinoute/typora-hivacruz-theme
 Authors: Yann Defretin, Kent Pribbernow
 Author URI: https://github.com/kinoute
 Description: A Typora Dark blue theme forked from the "Cobalt" theme.
-Version: 0.4
+Version: 0.5
 Tags: dark, blue, typora
 */
 
@@ -310,7 +310,7 @@ h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, 
 }
 
 #write h3:before {
-  bottom: 1.75rem;
+  bottom: 1.95rem;
   content: "H3";
 }
 
@@ -1350,7 +1350,7 @@ mark {
 
 /* Node color */
 .actor, .task, .node rect,
-.node circle, .node ellipse, .node polygon, g.classGroup rect {
+.node circle, .node ellipse, .node polygon, g.classGroup rect, .labelBox {
   fill: var(--mermaid-node-color);
   stroke: var(--mermaid-node-border);
   color: var(--text-color);
@@ -1364,7 +1364,7 @@ mark {
   stroke-width: 1px;
   height: 20px;
   text-align: center;
-  padding-top: 2px;
+/*  padding-top: 2px;*/
 }
 
 .note {
@@ -1421,5 +1421,216 @@ text.slice {
 .legend text {
   fill: var(--text-color);
 }
+
+.doneCritText0, .doneCritText1, .doneCritText2, .doneCritText3 {
+  fill: var(--text-color) !important;
+  stroke: var(--text-color) !important;
+}
+
 /* End mermaid */
+
+/* tip when hover on a button */
+#ty-tooltip {
+  background-color: black;
+  color: white;
+}
+
+/* header in setting */
+.window-header {
+}
+
+/* sidebar in setting */
+.sidebar {
+  background-color: #212431 !important;
+}
+
+.list-group-content {
+  margin-left: 10px !important;
+}
+
+/* sidebar button in setting menu */
+.nav-group-item {
+  color: var(--text-color) !important;
+  border-top-left-radius: 6px !important;
+  border-bottom-left-radius: 6px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+/* sidebar button hover in setting menu */
+.nav-group-item:hover,
+.nav-group-item:active,
+.nav-group-item.active {
+  background-color: #152638 !important;
+  color: white !important;
+}
+
+/* the indent example in setting.editor */
+div.pane
+  > div:nth-child(4)
+  > div:nth-child(2)
+  .label-input-group
+  td:last-child
+  div {
+  border: 1px solid #324560 !important;
+  border-radius: 6px;
+  background-color: #212431;
+  margin: 10px !important;
+}
+
+/* button in setting menu */
+.ty-preferences button.btn-default {
+  border: 1px solid #324560;
+  background-color: #212431;
+  border-radius: 6px;
+}
+
+/* button hover in setting menu */
+.ty-preferences .btn-default:not([disabled]):hover {
+  /* background-color: white !important; */
+  border-color: #f0b752 !important;
+  background-color: #212431 !important;
+}
+
+/* return button in setting menu */
+.window-header button:hover {
+  color: var(--text-color) !important;
+}
+
+/* search input in setting menu */
+.search-input {
+  border: 1px solid #324560;
+  border-top-left-radius: 6px !important;
+  border-bottom-left-radius: 6px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  margin-left: 10px !important;
+}
+
+.search-input:focus {
+  border: none !important;
+}
+
+/* select item (mostly in setting menu) */
+select {
+  border: 1px solid #324560;
+  border-radius: 6px;
+  background-color: #212431 !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+/* enabled select item hover */
+select:not([disabled]):hover {
+  color: var(--text-color);
+  opacity: 1;
+}
+
+/* disabled select item hover */
+select[disabled]:hover {
+  opacity: 0.5;
+}
+
+/* radio */
+
+input[type="radio"] {
+  background-color: #212431 !important;
+}
+
+input[type="radio"]:before {
+  content: "";
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid #324560;
+  border-radius: 0.55rem;
+  background-color: #212431 !important;
+  margin-top: -0.4rem;
+  margin-left: -0.1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* radio hover */
+input[type="radio"]:not([disabled]):not(:checked):hover:before {
+  content: "\25CF";
+  font-size: 1rem;
+  line-height: 1rem;
+  color: var(--text-color);
+}
+
+/* radio checked */
+input[type="radio"]:checked:before {
+  content: "\25CF";
+  font-size: 1rem;
+  line-height: 1rem;
+  color: var(--text-color);
+  background-color: #212431 !important;
+}
+
+
+/* remove up and down button from number type input*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+}
+
+input {
+  background-color: #212431 !important;
+  border: 0px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* input hover */
+/* input:hover {
+    background-color: var(--hover-bg-color2) !important;
+} */
+/* checkbox */
+input[type="checkbox"]:before {
+  content: "";
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid #324560;
+  border-radius: 3px;
+  background-color: #212431;
+  margin-top: -0.5rem;
+  margin-left: -0.1rem;
+}
+
+/* checkbox hover */
+input[type="checkbox"]:not([disabled]):not(:checked):hover:before {
+  content: "\2713";
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  color: var(--text-color);
+}
+
+/* checkbox checked*/
+input[type="checkbox"]:checked:before {
+  content: "\2713";
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  color: var(--text-color);
+}
+
+/* checkbox checked hover*/
+input[type="checkbox"]:checked:hover:before {
+  content: "\2713";
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  color: white;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 1px;
+  padding-right: 10px;
+  background-color: rgba(0, 0, 0, 0);
+}
 
