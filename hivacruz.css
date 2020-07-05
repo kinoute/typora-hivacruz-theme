@@ -4,7 +4,7 @@ Theme URI: https://github.com/kinoute/typora-hivacruz-theme
 Authors: Yann Defretin, Kent Pribbernow
 Author URI: https://github.com/kinoute
 Description: A Typora Dark blue theme forked from the "Cobalt" theme.
-Version: 0.5
+Version: 0.6
 Tags: dark, blue, typora
 */
 
@@ -881,6 +881,21 @@ header, .context-menu, .megamenu-content, footer {
   font-family: Nunito,sans-serif;
 }
 
+/* Sidebar header on Win/Linux (Files/Plan) */
+.info-panel-tab-title {
+/*  color: #afe61d;
+*/}
+
+/* Plan should get the same sidebar background color on Win/Linux */
+.typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on) #typora-sidebar {
+  background-color: #212431;
+}
+
+/* Bottom border on Win/Linux Sidebar */
+.info-panel-tab-border {
+  background-color: #afe61d !important;
+}
+
 .sidebar-footer-item:hover {
   background-color: inherit;
 }
@@ -1625,6 +1640,17 @@ input[type="checkbox"]:checked:hover:before {
   font-size: 0.9rem;
   line-height: 1.2rem;
   color: white;
+}
+
+/* input number in settings for Win/Linux */
+input:not([type="range"]):not([type="color"]) {
+  border: 1px solid #324560 !important;
+  border-radius: 3px;
+  background-color: #212431;
+}
+
+.pane-sm input[type="search"] {
+  border: 1px solid #324560 !important;
 }
 
 /* scrollbar */
