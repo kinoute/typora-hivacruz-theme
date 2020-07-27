@@ -42,6 +42,14 @@ For that matter, Issues and Pull Requests are very welcome!
 
 ![](images/plan.png)
 
+## Same theme in other apps
+
+I made similar themes with the same colours for different applications. Here there are:
+
+- Sublime Text theme : https://github.com/kinoute/hivacruz-sublime-theme
+- VSCode Theme : https://github.com/kinoute/vscode-hivacruz-theme
+- iTerm2 : https://github.com/kinoute/hivacruz-itermcolors
+
 ## Credits
 
 * Created by [Yann Defretin](https://github.com/kinoute).
