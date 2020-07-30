@@ -2,7 +2,7 @@
 
 # Hivacruz Theme for Typora
 
-A dark theme for [Typora](https://typora.io), a multi-platform Markdown Editor, that matches my [iTerm2 color scheme](https://github.com/kinoute/hivacruz-itermcolors) as well as my [Sublime Text 3 theme](https://github.com/kinoute/hivacruz-sublime-theme). Heavily inspired by the [Cobalt](https://github.com/elitistsnob/typora-cobalt-theme) theme.
+A dark theme for [Typora](https://typora.io), a multi-platform Markdown Editor, that matches my [iTerm2 color scheme](https://github.com/kinoute/hivacruz-itermcolors), my [Sublime Text 3 theme](https://github.com/kinoute/hivacruz-sublime-theme),  as well as my [VSCode theme](https://github.com/kinoute/vscode-hivacruz-theme). Heavily inspired by the [Cobalt](https://github.com/elitistsnob/typora-cobalt-theme) theme.
 
 ![](images/standard.png)
 
