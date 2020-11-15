@@ -1297,6 +1297,7 @@ mark {
     visibility: visible;
     opacity: 1;
     animation: none;
+    background-color: inherit;
 }
 
 /* mega menu sidebar*/
@@ -1336,6 +1337,18 @@ mark {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
     margin-bottom: 10px;
     margin-left: 10px;
+}
+
+.long-btn:hover {
+  background-color: #212431;
+}
+
+#recent-file-panel-action-btn {
+  background-color: #212431;
+  border: 0px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 /* Mermaid Diagrams */
