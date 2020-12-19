@@ -4,7 +4,7 @@ Theme URI: https://github.com/kinoute/typora-hivacruz-theme
 Authors: Yann Defretin, Kent Pribbernow
 Author URI: https://github.com/kinoute
 Description: A Typora Dark blue theme forked from the "Cobalt" theme.
-Version: 0.7
+Version: 0.8
 Tags: dark, blue, typora
 */
 
@@ -667,7 +667,7 @@ blockquote, blockquote p {
   margin-bottom: 0;
 }
 
-.md-math-block .MathJax_SVG_Display {
+.md-math-block {
   font-size: 1.4rem;
 }
 
@@ -1174,7 +1174,7 @@ mark {
   background-color: #ff8e30;
   border-radius: 4px;
   color: #000;
-  line-height: 1;
+  line-height: 2;
   padding: 5px 7px 2px 7px;
 }
 
