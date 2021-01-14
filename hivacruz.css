@@ -164,6 +164,21 @@ p {
   margin: 0 0 1.25rem;
 }
 
+/* Keyboard */
+kbd {
+    display: inline-block;
+    padding: 3px 5px;
+    font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    line-height: 10px;
+    color: #b1bac4;
+    vertical-align: middle;
+    background-color: #152638;
+    border-bottom-color: #6e7681;
+    border: 1px solid #6e7681;
+    border-radius: 6px;
+    box-shadow: inset 0 -1px 0 #6e7681;
+}
+
 /* Focus Mode */
 
 .on-focus-mode {
@@ -400,7 +415,7 @@ table {
 table th, table td {
   padding: 8px;
   line-height: 1.25rem;
-  vertical-align: top;
+  vertical-align: middle;
   border-top: 1px solid #324560;
 }
 
@@ -408,9 +423,9 @@ table th {
   font-weight: 700;
 }
 
-table thead th {
+/*table thead th {
   vertical-align: bottom;
-}
+}*/
 
 table caption+thead tr:first-child th, table caption+thead tr:first-child td, table colgroup+thead tr:first-child th, table colgroup+thead tr:first-child td, table thead:first-child tr:first-child th, table thead:first-child tr:first-child td {
   border-top: 0;
@@ -434,6 +449,7 @@ table tr td {
   border: 1px solid #324560;
   margin: 0;
   padding: 10px 16px;
+  line-height: 1.6em;
 }
 
 table tr th:first-child, table tr td:first-child {
@@ -578,11 +594,18 @@ code {
 }
 */
 
+/* Select Code Blocks Language */
 .code-tooltip {
-  background: #152638;
+  background: #192133;
   border: 1px solid #324560;
   box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
   /*margin-right: 13px!important;*/
+}
+
+/* Code Blocks language suggestion */
+.auto-suggest-container {
+  background: #192133;
+  border: 1px solid #324560;
 }
 
 .dropdown-menu {
@@ -802,7 +825,6 @@ p.mathjax-block, .mathjax-block {
 }
 
 #md-searchpanel .btn {
-  border: 1px solid #324560;
   font-size: 11px;
 }
 
@@ -1100,6 +1122,7 @@ input {
 #write ol>li, #write ul>li {
   color: #f0b752;
   font-weight: 700;
+  font-size: 1.2em;
 }
 
 #write ul>li ul>li {
@@ -1272,9 +1295,9 @@ mark {
   color: #8aa1e1;
 }
 
-.CodeMirror-activeline .CodeMirror-gutter-elt {
+/*.CodeMirror-activeline .CodeMirror-gutter-elt {
   color: white !important;
-}
+}*/
 
 /* mega menu */
 .megamenu-content,
@@ -1404,6 +1427,15 @@ mark {
   color: var(--text-color);
 }
 
+.noteText > tspan {
+    fill: #333 !important;
+    color: #333 !important;
+}
+
+.taskText {
+    fill: #333 !important;
+}
+
 /* Class diagram specific */
 g.classGroup line{
   stroke: var(--text-color);
@@ -1461,6 +1493,11 @@ text.slice {
 #ty-tooltip {
   background-color: black;
   color: white;
+}
+
+/* Yellow border when focusing Code block language input */
+.code-tooltip .ty-input {
+    border: 0;
 }
 
 /* header in setting */
@@ -1671,5 +1708,10 @@ input:not([type="range"]):not([type="color"]) {
   width: 1px;
   padding-right: 10px;
   background-color: rgba(0, 0, 0, 0);
+}
+
+/* Remove dashed border on filenames in the sidebar */
+.file-library-node:not(.file-node-root):focus>.file-node-content {
+    outline: 0 !important;
 }
 
