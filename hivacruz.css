@@ -4,7 +4,7 @@ Theme URI: https://github.com/kinoute/typora-hivacruz-theme
 Authors: Yann Defretin, Kent Pribbernow
 Author URI: https://github.com/kinoute
 Description: A Typora Dark blue theme forked from the "Cobalt" theme.
-Version: 0.9.1
+Version: 0.9.2
 Tags: dark, blue, typora
 */
 
@@ -1018,6 +1018,10 @@ input {
   width: 5ch;
 }
 
+#typora-source .CodeMirror-gutter-wrapper {
+  font-size: 1rem;
+}
+
 .cm-s-inner .CodeMirror-cursor {
   border-left: solid thin #f8f8f2!important;
 }
@@ -1621,7 +1625,7 @@ input[type="radio"]:before {
   border: 1px solid #324560;
   border-radius: 0.55rem;
   background-color: #212431 !important;
-  margin-top: -0.8rem;
+  margin-top: -0.7rem;
   margin-left: -0.1rem;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
@@ -1671,7 +1675,7 @@ input[type="checkbox"]:before {
   border: 1px solid #324560;
   border-radius: 3px;
   background-color: #212431;
-  margin-top: -0.8rem;
+  margin-top: -0.5rem;
   margin-left: -0.1rem;
 }
 
@@ -1689,7 +1693,7 @@ input[type="checkbox"]:checked:before {
   font-size: 0.9rem;
   line-height: 1.2rem;
   color: var(--text-color);
-  margin-top: -0.8rem;
+  margin-top: -0.5rem;
   margin-left: -0.1rem;
 }
 
@@ -1699,8 +1703,12 @@ input[type="checkbox"]:checked:hover:before {
   font-size: 0.9rem;
   line-height: 1.2rem;
   color: white;
-  margin-top: -0.8rem;
+  margin-top: -0.5rem;
   margin-left: -0.1rem;
+}
+
+#write input[type="checkbox"]:before, #write input[type="checkbox"]:checked:before {
+  margin-top: -0.97rem;
 }
 
 /* input number in settings for Win/Linux */
@@ -1726,3 +1734,7 @@ input:not([type="range"]):not([type="color"]) {
     outline: 0 !important;
 }
 
+/* Handle long filenames in sidebar */
+file-node-title-name-part {
+  white-space: pre-wrap;
+}
