@@ -4,7 +4,7 @@ Theme URI: https://github.com/kinoute/typora-hivacruz-theme
 Authors: Yann Defretin, Kent Pribbernow
 Author URI: https://github.com/kinoute
 Description: A Typora Dark blue theme forked from the "Cobalt" theme.
-Version: 0.9.2
+Version: 0.9.3
 Tags: dark, blue, typora
 */
 
@@ -534,6 +534,11 @@ code {
 .md-task-list-item>input {
   background: #1a283d;
   margin-left: -1.3em;
+}
+
+/* Using checkboxes in sublists should not get list circles inside inputs */
+.md-task-list-item {
+  list-style-type: none !important;
 }
 
 /*@media print {
