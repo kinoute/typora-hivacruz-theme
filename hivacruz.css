@@ -4,7 +4,7 @@ Theme URI: https://github.com/kinoute/typora-hivacruz-theme
 Authors: Yann Defretin, Kent Pribbernow
 Author URI: https://github.com/kinoute
 Description: A Typora Dark blue theme forked from the "Cobalt" theme.
-Version: 0.9.5
+Version: 0.9.6
 Tags: dark, blue, typora
 */
 
@@ -88,6 +88,22 @@ Tags: dark, blue, typora
     /* Legacy iOS */
 }
 
+/* Use a special font for code blocks just like GitHub */
+@font-face {
+    font-family: 'SFMono-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Mono Regular'), url('./hivacruz/SFMonoMedium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SFMono-Regular';
+    font-style: normal;
+    font-weight: 700;
+    src: local('SF Mono Regular'), url('./hivacruz/SFMonoBold.woff') format('woff');
+}
+
+
 :root {
     --text-color: #ffffff;
     --bg-color: #152638;
@@ -115,6 +131,7 @@ Tags: dark, blue, typora
     --mermaid-node-color: #b87f62 !important;
     --mermaid-node-border: #bd7958;
     --mermaid-contrast-color: #afe61d;
+    --monospace: "SFMono-Regular";
 }
 
 .pane-group {
@@ -486,6 +503,7 @@ a:hover {
     border: 1px solid #324560;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-radius: 3px;
 }
 
 /*.md-toc-inner:hover {
@@ -635,6 +653,7 @@ code {
     line-height: 2;
     padding: 5px 7px 2px 7px;
     white-space: nowrap;
+    font-family: "SFMono-Regular", "Fira Code", Nunito, monospace;
 }
 
 .md-fences {
@@ -902,10 +921,16 @@ p.mathjax-block,
     padding-right: .5em;
 }
 
+
 .md-image>img {
     margin-top: 2px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+#write p span[md-inline="image"]~span[md-inline="em"] {
+    display: block;
+    text-align: center;
 }
 
 .md-image>.md-meta:first-of-type:before {
@@ -1165,7 +1190,10 @@ input {
 .cm-s-inner .CodeMirror-gutters {
     border: 0;
     color: #6d8a88;
-    width: 5ch;
+}
+
+.CodeMirror-line {
+    padding-left: 15px;
 }
 
 #typora-source .CodeMirror-gutter-wrapper {
@@ -1178,7 +1206,6 @@ input {
 
 .cm-s-inner .CodeMirror-linenumber {
     color: #6d8a88;
-    width: 4ch !important;
 }
 
 .cm-s-inner .CodeMirror-line::selection,
@@ -1279,6 +1306,7 @@ input {
 #write ol,
 #write ul {
     padding-left: 2rem;
+    font-size: 1.15rem;
     /*  margin: .5rem 0;*/
 }
 
@@ -1334,6 +1362,7 @@ sup.md-footnote {
     background-color: #FC4349;
     color: white;
     font-weight: 700;
+    font-style: normal;
 }
 
 .md-def-footnote .md-def-name:before,
@@ -1924,3 +1953,40 @@ input:not([type="range"]):not([type="color"]) {
 file-node-title-name-part {
     white-space: pre-wrap;
 }
+
+/* Exports */
+.typora-export li {
+    font-size: 1.25rem !important;
+    padding-bottom: 10px !important;
+}
+
+.typora-export {
+    --monospace: "Fira Code";
+}
+
+.typora-export pre.md-fences {
+    font-size: 1.25rem !important;
+}
+
+.typora-export code {
+    font-size: 1.2rem !important;
+}
+
+.typora-export strong {
+    font-weight: 700 !important;
+}
+
+.typora-export #write a {
+    color: #27c3ca;
+}
+
+.typora-export .footnote-line {
+    color: #ffffff;
+    font-size: 13px !important;
+}
+
+.typora-export .footnote-line a {
+    color: #27c3ca;
+}
+
+@include-when-export url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap);
