@@ -1,5 +1,3 @@
-
-
 # Hivacruz Theme for Typora
 
 A dark theme for [Typora](https://typora.io), a multi-platform Markdown Editor, that matches my [iTerm2 color scheme](https://github.com/kinoute/hivacruz-itermcolors), my [Sublime Text 3 theme](https://github.com/kinoute/hivacruz-sublime-theme),  as well as my [VSCode theme](https://github.com/kinoute/vscode-hivacruz-theme). Heavily inspired by the [Cobalt](https://github.com/elitistsnob/typora-cobalt-theme) theme.
@@ -46,11 +44,12 @@ For that matter, Issues and Pull Requests are very welcome!
 
 I made similar themes with the same colours for different applications. Here there are:
 
-- Sublime Text theme: https://github.com/kinoute/hivacruz-sublime-theme
-- Vim Theme: https://github.com/kinoute/vim-hivacruz-theme
-- VSCode Theme: https://github.com/kinoute/vscode-hivacruz-theme
-- iTerm2: https://github.com/kinoute/hivacruz-itermcolors
-- Nova: https://github.com/kinoute/hivacruz-nova-theme
+- Sublime Text theme: [https://github.com/kinoute/hivacruz-sublime-theme](https://github.com/kinoute/hivacruz-sublime-theme)
+- Vim Theme: [https://github.com/kinoute/vim-hivacruz-theme](https://github.com/kinoute/vim-hivacruz-theme)
+- VSCode Theme: [https://github.com/kinoute/vscode-hivacruz-theme](https://github.com/kinoute/vscode-hivacruz-theme)
+- iTerm2: [https://github.com/kinoute/hivacruz-itermcolors](https://github.com/kinoute/hivacruz-itermcolors)
+- Nova: [https://github.com/kinoute/hivacruz-nova-theme](https://github.com/kinoute/hivacruz-nova-theme)
+
 ## Credits
 
 * Created by [Yann Defretin](https://github.com/kinoute).
