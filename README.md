@@ -49,6 +49,7 @@ I made similar themes with the same colours for different applications. Here the
 - VSCode Theme: [https://github.com/kinoute/vscode-hivacruz-theme](https://github.com/kinoute/vscode-hivacruz-theme)
 - iTerm2: [https://github.com/kinoute/hivacruz-itermcolors](https://github.com/kinoute/hivacruz-itermcolors)
 - Nova: [https://github.com/kinoute/hivacruz-nova-theme](https://github.com/kinoute/hivacruz-nova-theme)
+- Zed: https://github.com/kinoute/zed-hivacruz-theme
 
 ## Credits
 
